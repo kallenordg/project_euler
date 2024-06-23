@@ -10,11 +10,11 @@ def is_prime(number):
 def get_prime():
     num = 0
     prime = 2
-    while (num != 10002):
+    while (num != 10001):
         if(is_prime(prime)==True):
-            prime += 1
             num += 1
+        if num == 10001:
+            return prime
         prime += 1
-    return prime
 
 print(get_prime())
